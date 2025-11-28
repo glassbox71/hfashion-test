@@ -68,7 +68,7 @@ function App() {
   const initAuth = useAuthStore((state) => state.initAuth);
   useEffect(() => {
     initAuth();
-  }, []);
+  }, [initAuth]);
 
   return (
     <div className="App">

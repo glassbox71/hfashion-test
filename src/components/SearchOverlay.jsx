@@ -18,7 +18,12 @@ const popularKeywords = [
 const SearchOverlay = ({ isOpen, onClose }) => {
   const navigate = useNavigate();
   const store = useProductStore();
-  const products = store.items || [];
+  // const products = store.items || [];
+ useEffect(() => {
+  const filtered = category ? items.filter(...) : items;
+  setProducts(filtered);
+}, [category, items]);
+
 
   const [keyword, setKeyword] = useState('');
   const [filteredItems, setFilteredItems] = useState([]);

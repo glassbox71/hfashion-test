@@ -100,7 +100,7 @@ const NonMember = () => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, []);
+  }, [setIsRequestOpen]);
 
   return (
     <div className="sub-page">
