@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import  { useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './sass/SearchOverlay.scss';
 import { useProductStore } from '../store/useProductStore.js';
