@@ -1,3 +1,4 @@
+import "./App.css";
 import Header from "./components/Header";
 import { Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
@@ -68,7 +69,7 @@ function App() {
   const initAuth = useAuthStore((state) => state.initAuth);
   useEffect(() => {
     initAuth();
-  }, [initAuth]);
+  }, []);
 
   return (
     <div className="App">

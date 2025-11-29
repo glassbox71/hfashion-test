@@ -18,7 +18,7 @@ const NonMember = () => {
   const [isPostcodeOpen, setIsPostcodeOpen] = useState(false);
   const [rememberAddress, setRememberAddress] = useState('');
 
-  const [setIsRequestOpen] = useState(false);
+  const [isRequestOpen, setIsRequestOpen] = useState(false);
   const requestBoxRef = useRef(null);
 
   const handleComplete = (data) => {
@@ -100,7 +100,7 @@ const NonMember = () => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [setIsRequestOpen]);
+  }, []);
 
   return (
     <div className="sub-page">
